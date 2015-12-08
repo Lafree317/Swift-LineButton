@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_LineButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="rHq-9D-hva">
+                                <rect key="frame" x="28" y="111" width="544" height="31"/>
+                                <animations/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="按钮个数3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ns0-AH-xsd">
+                                <rect key="frame" x="246" y="64" width="106" height="27.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fj-sl-iU8">
+                                <rect key="frame" x="485" y="156" width="85" height="85"/>
+                                <animations/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="MNy-tR-W8j"/>
+                                    <constraint firstAttribute="height" constant="85" id="upI-qV-hnm"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="加号"/>
+                                <connections>
+                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GJf-8t-HZZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o29-ot-xog">
+                                <rect key="frame" x="30" y="149" width="85" height="85"/>
+                                <animations/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="s82-P2-tao"/>
+                                    <constraint firstAttribute="width" constant="85" id="sws-Al-ooW"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="减号"/>
+                                <connections>
+                                    <action selector="subButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxK-95-u7a"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUI-Bq-TMi">
+                                <rect key="frame" x="80" y="272" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rHq-9D-hva" secondAttribute="trailing" constant="30" id="1v1-Sb-wXx"/>
+                            <constraint firstItem="ns0-AH-xsd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="5rt-gw-I2I"/>
+                            <constraint firstItem="rHq-9D-hva" firstAttribute="top" secondItem="ns0-AH-xsd" secondAttribute="bottom" constant="20.5" id="9d5-YA-1R9"/>
+                            <constraint firstItem="o29-ot-xog" firstAttribute="top" secondItem="rHq-9D-hva" secondAttribute="bottom" constant="8" id="CMp-m9-BUF"/>
+                            <constraint firstItem="rHq-9D-hva" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="JVw-OR-ngq"/>
+                            <constraint firstAttribute="trailing" secondItem="rHq-9D-hva" secondAttribute="trailing" constant="30" id="R91-yT-vdN"/>
+                            <constraint firstItem="8fj-sl-iU8" firstAttribute="trailing" secondItem="rHq-9D-hva" secondAttribute="trailing" id="bdM-3A-7PL"/>
+                            <constraint firstItem="o29-ot-xog" firstAttribute="leading" secondItem="rHq-9D-hva" secondAttribute="leading" id="c7H-FR-iHB"/>
+                            <constraint firstItem="8fj-sl-iU8" firstAttribute="top" secondItem="rHq-9D-hva" secondAttribute="bottom" constant="14" id="dWW-kt-QHm"/>
+                            <constraint firstItem="rHq-9D-hva" firstAttribute="centerX" secondItem="ns0-AH-xsd" secondAttribute="centerX" id="e4Q-LK-5kV"/>
+                            <constraint firstItem="ns0-AH-xsd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qdt-Ag-5qp"/>
+                            <constraint firstItem="rHq-9D-hva" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="zz1-kU-Rt8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1v1-Sb-wXx"/>
+                                <exclude reference="JVw-OR-ngq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="myslider" destination="rHq-9D-hva" id="YV3-1k-fFu"/>
+                        <outlet property="topTitle" destination="ns0-AH-xsd" id="pWN-nF-0fV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="203"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="减号" width="85" height="85"/>
+        <image name="加号" width="85" height="85"/>
+    </resources>
+</document>
